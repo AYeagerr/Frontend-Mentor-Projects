@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.card{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 1px rgb(0, 0, 0, 0.4);
+}
+
+.left{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.left h4{
+    text-align: center;
+}
+
+.right{
+    width: 50%;
+    padding: 20px;
+}
+
+.score-circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 12px 0px hsl(256, 72%, 46%, 1);
+}
+
+.big{
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.score-con{
+    display: flex;
+}
+
+.score-reaction{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.score-memory{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(39, 100%, 56%, 0.29);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.score-verbal{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(166, 100%, 37%, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.score-visual{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(234, 85%, 45%, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.grey{
+    color: rgba(87, 87, 87, 0.992);
+}
+
+.black{
+    color: #222;
+    font-weight: bold;
+}
+
+.score-con img{
+    margin-right: 5px;
+}
+
+.t1{
+    color: hsl(0, 100%, 67%);
+}
+.t2{
+    color: hsl(39, 100%, 56%)
+}
+.t3{
+    color: hsl(166, 100%, 37%)
+}
+.t4{
+    color: hsl(234, 85%, 45%)
+}
+
+button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 50px;
+    width: 100%;
+}
+
+@media (max-width: 760px) {
+    .left {
+    width: 100%;
+    padding: 0px;
+    border-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    }
+
+    .right {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    .left-text {
+    padding: 20px;
+    text-align: center;
+    }
+
+    .card {
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0px;
+    overflow: hidden;
+    padding: 0;
+    }
+
+    button{
+        margin-bottom: 20px;
+    }
+}
